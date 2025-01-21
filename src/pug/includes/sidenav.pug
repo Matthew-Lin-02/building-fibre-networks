@@ -1,0 +1,11 @@
+mixin sideNav(activePage)
+    .modal-background
+    .sidenav
+        .flex-row-end
+            .modal-close-button
+                span.material-symbols-outlined.icon-close
+                    | close
+        .side-link-container
+            each page in ['index', 'about', 'developers', 'residents', 'retailers', 'contact']
+                a(href=`${page}.html`)
+                    span.sidenav-text(class=activePage === page ? 'side-active' : '')= page.charAt(0).toUpperCase() + page.slice(1)

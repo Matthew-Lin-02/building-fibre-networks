@@ -1,0 +1,35 @@
+.center-wrap
+    .contact-wrapper
+        h2.title-purple.title-large.title-purple.padding-bottom-2.text-align-center
+            | Get in touch!
+        p.text-align-center.margin-bottom-1
+            | And we will get back to you ASAP.
+        .empty-6 
+        .form-container#contact-form
+            form.contact-form(action="#" method="post")
+                .form-group
+                    label(for="name") Name
+                    input#name(type="text" name="name" placeholder="Name" )
+                    span.required-star *
+                .form-group
+                    label(for="email") Email
+                    input#email(type="email" name="email" placeholder="Email" )
+                    span.icon-envelope.margin-top-1
+                        i.fas.fa-envelope
+                    span.required-star *
+                .form-group
+                    label(for="phone") Phone
+                    input#phone(type="tel" name="phone" placeholder="Phone")
+                .form-group
+                    label(for="company") Company
+                    input#company(type="text" name="company" placeholder="Company")
+                .form-group
+                    label(for="message") Message
+                    textarea#message(name="message" placeholder="Message" )
+                    span.required-star-text-area *
+                button(type="submit") Submit
+        .empty-6
+        .flex-col-align-items-center
+            img.margin-bottom-2(class = "aqua-filter" src="../assets/icons/pin.png", alt="Icon description", width="48", height="48")
+            p.margin-bottom-2 Location
+            .title-medium 150 Chesterville Rd, Cheltenham VIC 3192

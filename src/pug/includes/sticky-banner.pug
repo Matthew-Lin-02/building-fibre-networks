@@ -1,0 +1,18 @@
+mixin stickyBanner(activePage)
+    .center-wrap.sticky-banner
+        .center
+            .sticky-header-bar
+                .branding.hidden
+                nav
+                    each page in ['index', 'about', 'developers', 'residents', 'retailers', 'contact']
+                        a(href=`${page}.html`, class=activePage === page ? 'active' : '')
+                            span.menu-text(class=activePage === page ? 'active' : '')= page.charAt(0).toUpperCase() + page.slice(1)
+                    //- DONT DELETE - Removed until search function is implemented
+                    //- .search-container
+                    //-     span.material-symbols-outlined.flip-horizontal.search-icon
+                    //-         |   search
+                    .modal-button
+                        .menu-lines-container
+                            span.menu-line
+                            span.menu-line
+                            span.menu-line

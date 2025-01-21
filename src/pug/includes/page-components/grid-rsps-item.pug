@@ -1,0 +1,9 @@
+mixin gridRspsItem(imgSrc, name, phoneNo, link)
+    .grid-rsps-item.flex-col-align-items-center
+        img.img-contain(src=imgSrc alt='')
+        h5.title-purple.font-weight-800.margin-bottom-1.font-size-16.text-align-center= name
+        p.margin-bottom-2= phoneNo
+        span 
+            a(href=link) 
+                button.visit-website.button-purple
+                    | visit website

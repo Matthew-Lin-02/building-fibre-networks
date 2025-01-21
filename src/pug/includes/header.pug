@@ -1,0 +1,44 @@
+
+mixin header(className,home,title,activePage)
+  .center-wrap.header(class=className)
+    if className
+        span.fancy-header-overlay
+    // Your header content here
+
+    .center.flex-col
+      
+      .header-bar
+        a(href="index.html").z-index-1
+            .branding
+        nav
+            each page in ['index', 'about', 'developers', 'residents', 'retailers', 'contact']
+                a(href=`${page}.html`, class=activePage === page ? 'active' : '')
+                    span.menu-text(class=activePage === page ? 'active' : '')= page.charAt(0).toUpperCase() + page.slice(1)
+            //- DONT DELETE - Removed until search function is implemented
+            //- .search-container
+            //-     span.material-symbols-outlined.flip-horizontal.search-icon
+            //-         |   search
+            
+            .modal-button.z-index-1
+                .menu-lines-container
+                    span.menu-line
+                    span.menu-line
+                    span.menu-line
+      if home 
+        .opener
+          
+          .opener-box
+            h1#welcome.z-index-1 Welcome to
+            h1#title.z-index-1
+              | Building Fibre
+              br
+              | Networks
+            h2#slogan.z-index-1
+              | Future Proof Your Property with
+              | the Market Leaders in Super-Fast Connectivity.
+          .empty-box
+      else
+        .other-title-container 
+          .other-title= title
+            
+          
