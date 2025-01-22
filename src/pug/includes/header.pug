@@ -11,9 +11,10 @@ mixin header(className,home,title,activePage)
         a(href="index.html").z-index-1
             .branding
         nav
-            each page in ['index', 'about', 'developers', 'residents', 'retailers', 'contact']
-                a(href=`${page}.html`, class=activePage === page ? 'active' : '')
-                    span.menu-text(class=activePage === page ? 'active' : '')= page.charAt(0).toUpperCase() + page.slice(1)
+            //- each page in ['index', 'about', 'developers', 'residents', 'retailers', 'contact']
+            each page in [{path: "/",label:"Home"}, {path: "/about.html",label:"About"}, {path: "/developers.html",label:"Developers"}, {path: "/residents.html",label:"Residents"}, {path: "/retailers.html",label:"Retailers"}, {path: "/contact.html",label:"Contact"},]
+                a(href=`${page.path}`, class=activePage === page.label.toLowerCase() ? 'active' : '')
+                    span.menu-text(class=activePage === page.label.toLowerCase()  ? 'active' : '')= page.label
             //- DONT DELETE - Removed until search function is implemented
             //- .search-container
             //-     span.material-symbols-outlined.flip-horizontal.search-icon
