@@ -8,7 +8,7 @@
 
 var stickyBanner = document.querySelector('.sticky-banner');
 var upArrow = document.querySelector('.fixed-up-arrow')
-console.log(document.querySelector('.sticky-banner'));
+
 
 
 var stickyOn = 130;
@@ -84,10 +84,10 @@ form.addEventListener("submit", (e) => {
     const companyValue = company.value.trim();
 
     let isValid = true;
-    console.log("formentered")
+
     // Validate Name (non-empty)
     if (nameValue === "") {
-        console.log("namenempty")
+   
         name.classList.add("error");
         isValid = false;
     } else {
