@@ -11504,14 +11504,14 @@ footer {
   display: flex;
   background-color: white;
   flex-direction: column;
-  padding: 5rem 3.7rem;
+  padding: clamp(3rem, 0.019rem + 3.831vw, 5rem) clamp(2.5rem, 0.711rem + 2.299vw, 3.7rem);
   align-items: center;
   color: #7566A0;
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.algin-self-center {
+.align-self-center {
   align-self: center;
 }
 
@@ -11567,11 +11567,11 @@ footer {
 }
 
 .grid-text-big-spacing {
-  padding: 11.6rem 7.7rem;
+  padding: clamp(9rem, 0.59rem + 8.469vw, 11.6rem) clamp(6rem, 0.501rem + 5.537vw, 7.7rem);
 }
 
 .grid-text-mid-spacing {
-  padding: 5.5rem 3.7rem;
+  padding: clamp(3rem, -5.086rem + 8.143vw, 5.5rem) clamp(2rem, -3.499rem + 5.537vw, 3.7rem);
 }
 
 .grid-text-title {
@@ -11723,6 +11723,10 @@ textarea.error {
   border-color: red;
 }
 
+.font-size-16-15 {
+  font-size: clamp(1.5rem, 1.177rem + 0.326vw, 1.6rem);
+}
+
 @media screen and (max-width: 993px) {
   nav > a {
     display: none;
@@ -11743,6 +11747,15 @@ textarea.error {
   .grid-pick-me-text-2,
   .grid-pick-me-text-3 {
     height: auto;
+  }
+  .grid-text-mid-spacing {
+    padding: 5.5rem 3.7rem;
+  }
+  .grid-text-big-spacing {
+    padding: 11.6rem 7.7rem;
+  }
+  .font-size-16-15 {
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 777px) {
@@ -11787,6 +11800,10 @@ textarea.error {
   }
   .width-percent-70 {
     width: 100%;
+  }
+  .grid-our-services {
+    display: flex;
+    flex-direction: column;
   }
 }
 :root {
