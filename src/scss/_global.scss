@@ -736,6 +736,8 @@ footer {
 
 // contact page
 .form-container {
+    //- DONT DELETE display: none removes it until form function is implemented
+    display: none;
     width: 100%;
     max-width: 400px;
     padding: 20px;
@@ -746,7 +748,7 @@ footer {
 }
 
 .contact-form {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     gap: 20px;
 }

@@ -11619,6 +11619,7 @@ footer {
 }
 
 .form-container {
+  display: none;
   width: 100%;
   max-width: 400px;
   padding: 20px;
@@ -11895,6 +11896,11 @@ textarea.error {
 
 .title-2 {
   font-size: 2rem;
+  font-weight: bold;
+}
+
+.title-small {
+  font-size: 1.55rem;
   font-weight: bold;
 }
 
