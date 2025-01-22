@@ -10902,7 +10902,7 @@ strong {
 }
 
 .header {
-  background-image: url("../assets/home/BFN-BANNER.jpg");
+  background-image: url("/assets/home/BFN-BANNER.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -10932,7 +10932,7 @@ strong {
 }
 
 .branding {
-  background-image: url("../assets/BFN-Logo-Retina.svg");
+  background-image: url("/assets/BFN-Logo-Retina.svg");
   background-size: cover;
   width: 14.4rem;
   height: 9rem;
@@ -11392,22 +11392,22 @@ footer {
 }
 
 .about-header {
-  background-image: url("../assets/about/BFN-DEVELOPERS.jpg");
+  background-image: url("/assets/about/BFN-DEVELOPERS.jpg");
   height: 63.5rem;
 }
 
 .residents-header {
-  background-image: url("../assets/residents/BFN-RESIDENTS.jpg");
+  background-image: url("/assets/residents/BFN-RESIDENTS.jpg");
   height: 63.5rem;
 }
 
 .retailers-header {
-  background-image: url("../assets/retailers/BFN-ABOUT.jpg");
+  background-image: url("/assets/retailers/BFN-ABOUT.jpg");
   height: 63.5rem;
 }
 
 .contact-header {
-  background-image: url("../assets/contact/BFN-CONTACT-2.jpg");
+  background-image: url("/assets/contact/BFN-CONTACT-2.jpg");
   height: 63.5rem;
 }
 
@@ -11487,7 +11487,7 @@ footer {
 }
 
 .developers-header {
-  background-image: url("../assets/developers/BFN-DEVELOPERS-2.jpg");
+  background-image: url("/assets/developers/BFN-DEVELOPERS-2.jpg");
   height: 63.5rem;
 }
 
