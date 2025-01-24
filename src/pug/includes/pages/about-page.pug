@@ -1,5 +1,5 @@
 include ../page-components/indigo-info-strip
-
+include ../page-components/client-list
 .center-wrap
     .section-wrapper
         .flex-row-equal.connect-world
@@ -57,72 +57,6 @@ include ../page-components/indigo-info-strip
     .section-wrapper
         h2.title-purple.padding-top-9.padding-bottom-2.title-large.text-align-center Clients
         .flex-row-equal.padding-bottom-12
-            div
-                ul.client-list
-                    li
-                        img(class = "aqua-filter" src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Amalgamated Property Group
-                    li 
-                        img(class = "aqua-filter" src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Beck Properties
-                    li 
-                        img(class = "aqua-filter"  src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Beulah International
-                    li 
-                        img(class = "aqua-filter"  src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Far East Consortium
-                    li 
-                        img(class = "aqua-filter" src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Frasers Property Group
-                    li 
-                        img(class = "aqua-filter"  src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Hallmark
-                    li 
-                        img(class = "aqua-filter" src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Lend Lease
-            div
-                ul.client-list
-                    li
-                        img(class = "aqua-filter" src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Amalgamated Property Group
-                    li 
-                        img(class = "aqua-filter" src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Beck Properties
-                    li 
-                        img(class = "aqua-filter"  src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Beulah International
-                    li 
-                        img(class = "aqua-filter"  src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Far East Consortium
-                    li 
-                        img(class = "aqua-filter" src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Frasers Property Group
-                    li 
-                        img(class = "aqua-filter"  src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Hallmark
-                    li 
-                        img(class = "aqua-filter" src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Lend Lease
-            div
-                ul.client-list
-                    li
-                        img(class = "aqua-filter" src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Amalgamated Property Group
-                    li 
-                        img(class = "aqua-filter" src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Beck Properties
-                    li 
-                        img(class = "aqua-filter"  src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Beulah International
-                    li 
-                        img(class = "aqua-filter"  src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Far East Consortium
-                    li 
-                        img(class = "aqua-filter" src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Frasers Property Group
-                    li 
-                        img(class = "aqua-filter"  src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Hallmark
-                    li 
-                        img(class = "aqua-filter" src="/assets/icons/arrow-point-to-right.png", alt="Icon description", width="14", height="14")
-                        | Lend Lease
+            +clientList(["Amalgamated Property Group","Beck Properties","Beulah International","Far East Consortium","Frasers Property Group","Hallmark","Lend Lease"])
+            +clientList(["Morris Properties", "Sekisui House", "OSK Properties", "Pradella Property Ventures", "R&F Properties", "Robina Group", "Shaq Industries", "Sunland", "Stockland"])
+            +clientList(["Stockwell", "World Class Global", "Hutchinson Builders", "Multiplex Global", "ICON Builders", "ProBuild", "McNab", "MainBrace"])
