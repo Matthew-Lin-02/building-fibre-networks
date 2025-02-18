@@ -10849,6 +10849,11 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: 0;
   padding: 0;
