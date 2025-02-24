@@ -10907,7 +10907,7 @@ strong {
 }
 
 .header {
-  background-image: url("/assets/home/BFN-BANNER.jpg");
+  background-image: url("assets/home/BFN-BANNER.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -10937,7 +10937,7 @@ strong {
 }
 
 .branding {
-  background-image: url("/assets/BFN-Logo-Retina.svg");
+  background-image: url("assets/BFN-Logo-Retina.svg");
   background-size: cover;
   width: 14.4rem;
   height: 9rem;
